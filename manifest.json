@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tab Duplicator",
+  "short_name": "Tab Duplicator",
+  "description": "Duplicate tabs with a keyboard shortcut",
+  "version": "0.1",
+  "author": "Dennis Paagman",
+
+  "background": {
+    "scripts": ["tab-duplicator.js"]
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "commands": {
+    "duplicate-tab": {
+      "suggested_key": {
+        "default": "Shift+Alt+D",
+        "mac": "Shift+Command+D"
+      },
+      "description": "Duplicate current tab"
+    }
+  }
+}
